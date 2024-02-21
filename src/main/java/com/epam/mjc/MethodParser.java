@@ -38,7 +38,6 @@ public class MethodParser {
         }
 
         returnType = parts[index];
-        index++;
 
         if (accessModifier==null && returnType==null){methodName = signatureString.substring(signatureString.indexOf("0"), signatureString.indexOf("("));}
         if (accessModifier==null || returnType==null){methodName = signatureString.substring(signatureString.indexOf(" ") + 1, signatureString.indexOf("("));}
