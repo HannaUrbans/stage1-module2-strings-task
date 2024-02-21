@@ -8,7 +8,7 @@ public class MethodSignature {
     private String accessModifier;
     private String returnType;
     private String methodName;
-    private int argumentCount;
+    private final int argumentCount;
     private final List<Argument> arguments;
 
     public MethodSignature(String accessModifier, String returnType, String methodName,  int argumentCount, List<Argument> arguments) {
